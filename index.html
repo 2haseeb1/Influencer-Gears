@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google-material-icons -->
+    <!-- https://material.io/resources/icons/?style=baseline -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+rel="stylesheet">
+
+<!-- https://material.io/resources/icons/?style=outline -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+rel="stylesheet">
+
+    <!-- flat-icon -->
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+   
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Document</title>
+</head>
+<style>
+    *{margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+        background:#fff;
+    }
+    /* section-styling */
+    .top-section-height{
+        height:100vh;
+        margin-left: 10%;
+    }
+     /* ---header-styling--- */
+     .header-spacing{
+         margin-left:5%;
+         margin-right: -80px;
+     }
+    nav{
+       display: flex;
+       margin-top: 102px;
+       width: 100%;
+       margin-right: -200px;
+    }
+      
+           
+   /* logo-text-styling */
+   .logo-text p{
+       color:#3A3A3A;
+       font-size: 24px;
+       font-weight:700;
+   }
+/* ---two-column-making--- */
+  .two-column{
+      display:flex;
+    
+  }
+   
+
+   
+    /* ---top-left-part-styling--- */
+    .left-part{
+        width:50%;
+        margin-top: 182px;
+    }
+    /*---- left-title-styling--- */
+    .left-title{
+        font-size: 25.5px;
+        margin-top: -30px;
+        color:#3A3A3A;
+        font-weight: bold;
+
+    }
+
+    /* left-para-styling */
+    .left-para{
+        color: #3A3A3A;
+
+    }
+ 
+
+     /* ---top-right-part-styling--- */
+     .right-part{
+         width: 50%;
+         height:50%;
+         transition:transform 5s ease;
+         
+        
+     }
+
+    .right-part:hover{
+        background:#e22e6d57;
+        transform:scale(0.7);
+      
+        transform:rotate(360deg);
+    }
+     /*----- button-styling---- */
+     .btn-styling{
+         background: #E22E6D;
+         border: none;
+         border-radius: 41px;
+         color:#F8F2FF;
+         font-size: 16px;
+         width: 196px;
+         height: 44px;
+         transition:transform 1.3s;
+     }
+
+      .btn-styling:hover {
+        
+         background:rgba(42, 165, 138, 0.623);
+         background-blend-mode: overlay;
+         transform:translate(100px);
+     } 
+     /* horizontal-line */
+     hr{
+         margin-top: 50px;
+     }
+     /* top-product-title-styling */
+     .top-product-title p{
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 50px;
+        margin-top: 10px;
+        color:#3A3A3A;
+        font-weight: 600;
+     }
+
+     /* -----------------New Product-card-styling-section-------------- */
+     /* center-product-title-styling */
+     .center-product-title{
+         overflow: hidden;
+         display:block;
+     }
+      /* product-gallery-centering */
+     /* product-image-gallery-styling */
+     .product-image-gallery{
+         display: grid;
+         grid-template-columns:repeat(3,331px) ;
+         grid-gap:25px;
+        
+     }
+     .product-position{
+        
+         display: flex;
+         justify-content: center;
+         align-items:center;
+     }
+     .product-pricing{
+         font-size: 24px;
+         font-family: 'Inter',sans-serif;
+     }
+      .one{
+         width: 331px;
+         height:473px;
+         border-radius:5px;
+         background:#ffffff;
+         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     }
+    /* product-image-styling */
+    .product-image-styling{
+        margin-top:16px;
+        margin-left:16px;
+        margin-right:16px;
+       
+
+    }
+    /* product-title-styling */
+    .product-title{
+        font-size: 28px;
+        color: #18191F;
+        font-weight: 500;
+    }
+    /* product-description-styling */
+    .product-description{
+        font-size: 14px;
+        font-weight: bold;
+        color:#787885;
+    }
+    /*-------- product-rating-styling-------- */
+    .filled{
+            color:#FFC014;
+            margin-top: 3px;
+            font-size: 12px;
+        } 
+    /* ----product-info-styling----- */
+        .product-info-position{
+            margin-left:5%;
+        }
+      /*-----product-bottom-part-styling-----*/
+      .product-bottom-part{
+        color:#E22E6D;
+        font-size: 16px;
+        margin-bottom: 110px;
+        font-weight: 400;
+        margin-top: 52px;
+        margin-left: 80%;
+       
+      }
+      .product-bottom-part p a{
+          text-decoration:none ;
+          color:#E22E6D;
+      }
+      /* -------last-extra-section-styling------- */
+      /* ---------------------------------------- */
+
+      /* ------image-styling------ */
+      .image-styling-last{
+          height: 270px;
+          width: 408px;
+          border-radius:5px ;
+      }
+       /*------- last-two-column-styling----- */
+       .last-two-column{
+           display: flex;
+           justify-content: center;
+       }
+      /*---- left-column-styling---- */
+      .left-column{
+          max-width: 50%;
+          
+      }
+       /*---- right-column-styling---- */
+       .right-column{
+           max-width:50%;
+           margin-left:90px;
+       }
+            /* ----right-column-title-styling---- */
+            .right-column h3{
+                font-size: 38px;
+                font-weight: 700;
+                color:#0A0826;
+            }
+            /*---- right-para-stylying--- */
+            .right-para{
+                margin-top: 40px;
+                color:#6C6C6C;
+                font-size:16px ;
+            }
+            /*--- button-styling--- */
+             .btn-last{
+                 width: 155px;
+                 height: 44px;
+                 font-size:16px;
+                 color:#fff;
+                 font-weight:700;
+                 border:none;
+                 background:#E22E6D;
+             }
+
+             /* ---------------------------Footer Styling-------------------- */
+             footer{
+                 width:100%;
+                 height: 239px;
+                 background: #0A0826;
+             }
+             .footer-section{
+                 text-align:center;
+                 margin-top:50px;
+                 padding-top:40px ;
+                 
+             }
+              .first-para-footer {
+                 font-size: 24px;
+                 color:#ffffff;
+                
+             } 
+             .copyright{
+                 font-size: 14px;
+                 color: #D9DBE1;
+                 font-weight:300 ;
+                 
+
+             }
+             /*------ footer-icon-styling---- */
+             .icon-section{
+                 margin-top:20px;
+             }
+             .fab{
+                 color:#ffffff;
+                 background: grey;
+                 border-radius: 50px;
+                 height: 30px;
+                 width:30px;
+                 padding-top:6px;
+             }
+            /* making-responsiveness-styling */
+            /* Mobile Devices */
+    @media  only screen and  (max-width:480px) {
+        .container{
+            width: 100%;
+        }
+        nav{
+            flex-direction: column;
+            width:100%;
+            flex-wrap:wrap;
+        }
+        nav ul{
+            display:none;
+        }
+        .two-column{
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        .header-height{
+            height:100%;
+            margin-top: 5%;
+        }
+        .product-image-gallery{
+            grid-template-columns:1fr ;
+            height:100%;
+            margin-top:-2%;
+        }
+       .last-two-column{
+           flex-direction:column ;
+       }
+    .right-part{
+        width: 100%;
+        height:100%;
+    }
+    .right-part img{
+        width: 100%;
+        height: 100%;
+        margin-right:15%;
+    }
+    .position-line{
+     margin-top: 129%;
+     
+
+    }
+    .top-section-height{
+        margin-bottom:56%;
+
+    }
+        /* .players, .blogs {
+           background: rgb(180, 10, 10);
+           display:grid;
+           grid-template-columns: repeat(1,1fr);
+        }
+        .player{
+            flex-direction:column;
+        }
+        .courses-grand{
+            grid-template-columns: repeat(1,1fr);
+            width: 100%;
+        } */
+        
+        .center-product-title{
+            width: 100%;
+            height:100%;
+            overflow-y: hidden;
+            position:relative;
+            
+        }
+        .top-product-title{
+            
+            display:block;
+            margin-top:83%;
+        }
+
+    } 
+</style>
+<body>
+    <section class="top-section-height  container ">
+    <header class="header-spacing header-height">
+     <nav>
+        <div class="logo nav-margin-width">
+        <div class="logo-text ">
+            <p>Influencer Products</p></div>
+        </div>
+        </div>
+        <!-- <div class="menu-bar nav-margin-width">
+             <ul class="">
+                <li class="menu-position"><a href="#">Home</a></li>
+                <li class="menu-position"><a href="#">Products</a></li>
+                <li class="menu-position"><a href="#">Sign up</a></li>
+                <li class="menu-position"><a href="#">Log in</a></li>
+                <li class="menu-position"><a href="#"></a></li>
+               
+                </ul>
+                
+                <span class="material-icons shopping-cart-icon">shopping_cart_checkout</a></span></li>
+                <li><a href="#"> <i class="material-icons search-icon">search</i></a></li>  
+               -->
+          
+                
+                           
+           
+            
+                
+        <!-- </div> -->
+    
+    </nav> 
+    <div class="two-column">
+    <div class="title-top-margin-gap left-part">
+        <div class="left-title">
+        <h1 class="left-part-title-line-height">Start Your Journey as</h1>  
+        <h1 class="left-part-title-line-height">Influencer</h1>
+        </div>
+        <p class="left-para">
+         
+         You have the determination to work harder <p class="left-para">than most and make sure things get.</p> 
+        </p>
+        <br>
+        <button class="btn-styling">Prebook now
+          <i class="fas fa-long-arrow-alt-right "></i>
+        </button>
+        
+      </div>
+      <div class="right-part">
+          <div class="circle-1">
+              <img src="influencer.jpg" alt="" width="100%" class="top-image-styling">
+          
+        </div>
+      </div> 
+    </div>
+
+    </header>
+    
+    <hr class="position-line">
+   
+</section>
+<section class="center-product-title">
+    <div class="top-product-title">
+        <p>Popular Collection</p>
+    </div>
+</section>
+
+<section class="container product-position">
+    
+<article class="product-image-gallery">
+    <article class="one">
+        <div class="image-1">
+            <img src="images/single-light.png" alt="" class="product-image-styling">
+        </div>
+       <article class="product-info-position">
+            <div class="product-title">Green Screen</div>
+            <div class="product-pricing">$385.00</div>
+             <div class="product-rating">
+                <span class="material-icons-outlined filled">
+                    star
+                    </span>
+               <span class="material-icons-outlined filled">
+                    star
+                    </span>
+               <span class="material-icons-outlined filled">
+                    star
+                    </span>
+               <span class="material-icons-outlined filled">
+                    star
+                    </span>
+               <span class="material-icons-outlined filled">
+                    star_half
+                    </span>
+           
+            <span> 4.98</span>
+
+        </div>
+        <div class="product-description">
+            <p>Green Screen Backdrop with Stand Kit</p>
+            <p>Stocks are limited</p>
+            <p>Get it right now</p>
+        </div>
+      </article>
+    </article>
+    <article class="one">
+        <div class="image-1">
+            <img src="images/action.png" alt="" class="product-image-styling">
+        </div>
+        <article class="product-info-position">
+        <div class="product-title">Action Camera</div>
+        <div class="product-pricing">$385.00</div>
+        <div class="product-rating">
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+            <span class="material-icons-outlined filled">
+                star_half
+                </span>
+            <span> 4.5</span>
+
+        </div>
+            <div class="product-description">
+            <p>GoPro Hero 9 Black action cam</p>
+            <p>Stocks are limited</p>
+            <p>Get it right now</p>
+            </div>
+        </article>
+    </article>
+    <article class="one">
+        <div class="image-1">
+            <img src="images/tripod.png" alt="" class="product-image-styling">
+        </div>
+         <article class="product-info-position">
+            <div class="product-title">Flex Tripod</div>
+            <div class="product-pricing">$120.00</div>
+            <div class="product-rating">
+                <span class="material-icons-outlined filled">
+                    star
+                    </span>
+               <span class="material-icons-outlined filled">
+                    star
+                    </span>
+               <span class="material-icons-outlined filled">
+                    star
+                    </span>
+               <span class="material-icons-outlined filled">
+                    star
+                    </span>
+               <span class="material-icons-outlined filled">
+                    star_half
+                    </span>
+            <span> 4.60</span>
+
+        </div>
+        <div class="product-description">
+            <p>Flexible Tripod for DSLR and Cameras</p>
+            <p>Stocks are limited</p>
+            <p>Get it right now</p>
+        </div>
+        </article>
+    </article>
+    <article class="one">
+        <div class="image-1">
+            <img src="images/drone.png" alt="" class="product-image-styling">
+        </div>
+        <article class="product-info-position">
+        <div class="product-title">Drone</div>
+        <div class="product-pricing">$885.00</div>
+        <div class="product-rating">
+            <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+            <span>5</span>
+
+        </div>
+        <div class="product-description">
+            <p>Drones for adults</p>
+            <p>Stocks are limited</p>
+            <p>Get it right now</p>
+        </div>
+        </article>
+    </article>
+    <article class="one">
+        <div class="image-1">
+            <img src="images/lights.png" alt="" class="product-image-styling">
+        </div>
+        <article class="product-info-position">
+        <div class="product-title">Light Setup</div>
+        <div class="product-pricing">$1150.00</div>
+        <div class="product-rating">
+            <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+            <span> 4.5</span>
+
+        </div>
+        <div class="product-description">
+            <p>FOSITAN Photography  Kit</p>
+            <p>Stocks are limited</p>
+            <p>Get it right now</p>
+        </div>
+        </article>
+    </article>
+    <article class="one">
+        <div class="image-1">
+            <img src="images/airpod.png" alt="" class="product-image-styling">
+        </div>
+        <article class="product-info-position">
+        <div class="product-title">Airpods</div>
+        <div class="product-pricing">$110.00</div>
+        <div class="product-rating">
+            <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+            <span> 4.5</span>
+
+        </div>
+        <div class="product-description">
+            <p>	AirPods (3rd generation)</p>
+            <p>Stocks are limited</p>
+            <p>Get it right now</p>
+        </div>
+        </article>
+    </article>
+    <article class="one">
+        <div class="image-1">
+            <img src="images/setup.png" alt="" class="product-image-styling">
+        </div>
+    <article class="product-info-position">
+         <div class="product-title">Photoshoot Set</div>
+         <div class="product-pricing">$810.00</div>
+         <div class="product-rating">
+            <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+            <span> 4.5</span>
+
+        </div>
+        <div class="product-description">
+            <p>LimoStudio 3 Sets of LED  Light Panel </p>
+            <p>Stocks are limited</p>
+            <p>Get it right now</p>
+        </div>
+        </article>
+      </article>
+    <article class="one">
+        <div class="image-1">
+            <img src="images/mic.png" alt="" class="product-image-styling">
+        </div> 
+    <article class="product-info-position">
+        <div class="product-title">Microphone</div>
+        <div class="product-pricing">$385.00</div>
+        <div class="product-rating">
+            <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+            <span> 4.5</span>
+
+        </div>
+            <div class="product-description">
+            <p>USB Microphone </p>
+            <p>Stocks are limited</p>
+            <p>Get it right now</p>
+        </div>
+      </article>
+    </article>
+    <article class="one">
+        <div class="image-1">
+            <img src="images/tele-zoom.png" alt="" class="product-image-styling">
+        </div>
+        <article class="product-info-position">
+        <div class="product-title">Mobile Zoom Lens</div>
+        <div class="product-pricing">$250.00</div>
+        <div class="product-rating">
+            <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+           <span class="material-icons-outlined filled">
+                star
+                </span>
+            <span> 4.5</span>
+
+        </div>
+        <div class="product-description">
+            <p>20X Zoom Telephoto Lens</p>
+            <p>Stocks are limited</p>
+            <p>Get it right now</p>
+        </div>
+    </article>
+  </article>
+
+</section>
+<div class="product-bottom-part">
+    <p>See More <a href="http:#" class="text-decoration"><i class="fas fa-long-arrow-alt-right "></i></a></p>
+</div>
+<section>
+    <section class="last-two-column">
+        <article class="left-column">
+            <img src="images/social-media.png" alt="" width="408px" height="270px" class="image-styling-last">
+        </article>
+        <article class="right-column">
+           
+        <h3>Featured products at once place</h3>
+            <div class="right-para">
+                <p>Featured products will likewise be showcased</p>
+                <p>In the categories you've assigned them to.</p>
+                <p>Unassigned categories are displayed  as well.</p>
+                <br>
+                <button class="btn-last " >Join Now
+                    <i class="fas fa-long-arrow-alt-right "></i>
+                  </button>
+            </div>
+        </article>
+    </section>
+</section>
+<footer>
+    <div class="footer-section container">
+        <p class="first-para-footer">Influencer Products</p>
+        <p class="copyright">Copyright &copy 2022 influencer products</p>
+        <p class="copyright">All rights reserved</p>
+        
+        <section class="icon-section">
+            <i class="fab fa-twitter "></i>
+            <i class="fab fa-facebook "></i>
+            <i class="fab fa-youtube "></i>
+            <i class="fab fa-discord "></i>
+        </section>
+
+       
+    </div>
+</footer>
+</body>
+</html>
